@@ -1,5 +1,7 @@
+import dynamic from "next/dynamic";
+
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+const Header = dynamic(() => import("@/components/Header"), { ssr: false });
 import About from "@/components/home-1/About";
 import Banner from "@/components/home-1/Banner";
 import CallToAction from "@/components/home-1/CallToAction";
@@ -27,7 +29,7 @@ export default function Home() {
   return (
     <>
       {/* <!-- Sidebar Menu end --> */}
-      {/* <Header /> */}
+       <Header /> 
       {/* <!-- Banner-section start --> */}
       <Banner />
       {/* <!-- Banner-section end --> */}
