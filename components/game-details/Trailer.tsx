@@ -1,3 +1,4 @@
+'use client';
 import line1 from "@/public/images/abs-items/line-1.png";
 import object1 from "@/public/images/abs-items/object-1.png";
 import videobg from "@/public/images/video-bg.png";

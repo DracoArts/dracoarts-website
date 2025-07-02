@@ -10,7 +10,7 @@ import React from "react";
 import type { Metadata } from "next";
 
   export const metadata: Metadata = {
-    title: "Draco Arts Games",
+    title: "Draco Arts Games DATA",
     description: "test test",
   };
 
@@ -18,8 +18,6 @@ const page = () => {
   return (
     <>
 
-
-      
       <Banner />
       {/* <!-- Banner-section end --> */}
 
@@ -38,11 +36,11 @@ const page = () => {
       {/* <!-- Call to Action start --> */}
        <CallToAction /> 
       {/* Blog section */}
-       <Blog /> 
+       {/* <Blog />  */}
       {/* <!-- Blogs end --> */}
 
       {/* <!-- Instagram post start --> */}
-       <InstagramPost /> 
+       {/* <InstagramPost />  */}
       {/* <!-- Instagram post end --> */}
     </>
   );

@@ -1,3 +1,4 @@
+'use client'
 import faqFrame from "@/public/images/abs-items/faq-frame.png";
 import faqIcon from "@/public/images/faq-icon.png";
 import Image from "next/image";

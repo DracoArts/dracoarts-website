@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import storyIllus from "@/public/images/our-story-illus.png";
 import Slider from "react-slick";

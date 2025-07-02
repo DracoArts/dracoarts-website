@@ -1,4 +1,4 @@
-"use client";
+
 import Banner from "@/components/about/Banner";
 import Focus from "@/components/about/Focus";
 import Story from "@/components/about/Story";
@@ -11,7 +11,9 @@ import About from "@/components/home-1/About";
 import Counter from "@/components/home-1/Counter";
 import Team from "@/components/home-1/Team";
 import Testimonials from "@/components/home-1/Testimonials";
-import React from "react";
+
+// If any of these components are exported as named exports, change the import to:
+// import { ComponentName } from "path";
 const page = () => {
   return (
     <>

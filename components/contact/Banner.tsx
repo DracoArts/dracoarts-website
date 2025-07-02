@@ -1,3 +1,4 @@
+import React from "react";
 import bubble from "@/public/images/abs-items/bubble.png";
 import ellipse7 from "@/public/images/abs-items/ellipse-7.png";
 import Image from "next/image";

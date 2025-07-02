@@ -1,3 +1,4 @@
+'use client';
 import ourfocusbg from "@/public/images/our-focus-bg.png";
 import blogImg from "@/public/images/blog-img-1.png";
 import Image from "next/image";

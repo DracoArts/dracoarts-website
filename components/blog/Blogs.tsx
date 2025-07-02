@@ -1,3 +1,4 @@
+'use client';
 import blog1 from "@/public/images/blogs-img-1.png";
 import blog2 from "@/public/images/blogs-img-2.png";
 import blog3 from "@/public/images/blogs-img-3.png";

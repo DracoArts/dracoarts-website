@@ -1,4 +1,4 @@
-
+'use client'
 import brand1 from "@/public/images/brand-logo-1.png";
 import brand2 from "@/public/images/brand-logo-2.png";
 import brand3 from "@/public/images/brand-logo-3.png";

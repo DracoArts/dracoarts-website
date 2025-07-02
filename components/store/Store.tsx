@@ -1,3 +1,4 @@
+'use client';
 import { storeItems } from "@/public/data/storedata";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { IProduct, addToCart } from "@/redux/productSlice";

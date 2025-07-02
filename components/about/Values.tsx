@@ -1,3 +1,4 @@
+'use client';
 import Slider from "react-slick";
 import { Next, Prev } from "../SliderBtns";
 import { useState } from "react";

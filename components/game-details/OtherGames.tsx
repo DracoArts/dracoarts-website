@@ -1,3 +1,4 @@
+'use client';
 import gameImg2 from "@/public/images/game-image-2.png";
 import reviewImg2 from "@/public/images/review-image-2.png";
 import appstore from "@/public/images/appstore.png";

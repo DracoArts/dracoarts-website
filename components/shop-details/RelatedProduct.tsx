@@ -1,3 +1,4 @@
+'use client';
 import store1 from "@/public/images/store-img-1.png";
 import store2 from "@/public/images/store-img-2.png";
 import store3 from "@/public/images/store-img-3.png";

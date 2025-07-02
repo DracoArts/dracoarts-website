@@ -1,3 +1,4 @@
+
 import customer1 from "@/public/images/customer-img-1.png";
 import customer2 from "@/public/images/customer-img-2.png";
 import Image from "next/image";

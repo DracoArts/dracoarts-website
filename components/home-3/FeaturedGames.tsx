@@ -1,3 +1,4 @@
+'use client';
 import gameCard1 from "@/public/images/game-card-1.png";
 import gameCard2 from "@/public/images/game-card-2.png";
 import gameCard3 from "@/public/images/game-card-3.png";

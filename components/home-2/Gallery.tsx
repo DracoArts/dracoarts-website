@@ -1,3 +1,4 @@
+'use client'
 import gallery1 from "@/public/images/gallery-img-1.png";
 import gallery2 from "@/public/images/gallery-img-2.png";
 import gallery3 from "@/public/images/gallery-img-3.png";

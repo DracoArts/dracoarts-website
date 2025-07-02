@@ -1,3 +1,4 @@
+'use client'
 import ellipse7 from "@/public/images/abs-items/ellipse-7.png";
 import ellipse8 from "@/public/images/abs-items/ellipse-8.png";
 import aboutBlock from "@/public/images/about-block-bg-2.png";
