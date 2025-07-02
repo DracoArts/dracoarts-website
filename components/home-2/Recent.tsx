@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import recentImg1 from "@/public/images/recently-completed-img-1.png";
 import recentImg2 from "@/public/images/recently-completed-img-2.png";

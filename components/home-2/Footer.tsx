@@ -1,3 +1,4 @@
+'use client';
 import logoText from "@/public/images/logo-text-alt.png";
 import Image from "next/image";
 import Link from "next/link";

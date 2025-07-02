@@ -1,3 +1,4 @@
+'use client';
 import { openjobshome1 } from "@/public/data/jobshome1";
 import Link from "next/link";
 import React, { useState } from "react";

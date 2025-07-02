@@ -1,3 +1,4 @@
+'use client';
 import { teamHome2 } from "@/public/data/teamhome2";
 import Image from "next/image";
 import Link from "next/link";
