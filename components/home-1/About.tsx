@@ -23,6 +23,7 @@ const About = () => {
                   </div>
                   <span className="w-25 d-inline-bloc">
                     Years Of Experience
+                    
                   </span>
                 </div>
               </div>
