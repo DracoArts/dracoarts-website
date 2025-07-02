@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       {/* <!-- Sidebar Menu end --> */}
-      <Header />
+      {/* <Header /> */}
       {/* <!-- Banner-section start --> */}
       <Banner />
       {/* <!-- Banner-section end --> */}
