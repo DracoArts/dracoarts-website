@@ -35,48 +35,48 @@ export default function Home() {
       {/* <!-- Banner-section end --> */}
 
       {/* <!-- About block section start --> */}
-      {/* <About /> */}
+     <About /> 
 
       {/* <!-- About block section end --> */}
 
       {/* <!-- Our Games section start --> */}
-      {/* <OurGames /> */}
+       <OurGames /> 
       {/* <!-- Our Games section end --> */}
 
       {/* <!-- Team Members start --> */}
-      {/* <Team /> */}
+      <Team /> 
       {/* <!-- Team Members end --> */}
 
       {/* <!-- Counter Section start --> */}
-      {/* <Counter /> */}
+       <Counter /> 
       {/* <!-- Counter Section end --> */}
 
       {/* <!-- Our Services start --> */}
-      {/* <Services /> */}
+       <Services />
       {/* <!-- Our Services end --> */}
 
       {/* <!-- Life Gamestorm start --> */}
-      {/* <LifeGameStorm /> */}
+       <LifeGameStorm />
       {/* <!-- Life Gamestorm end --> */}
 
       {/* <!-- Job Opens start --> */}
-      {/* <JobOpens /> */}
+      <JobOpens /> 
       {/* <!-- Job Opens end --> */}
 
       {/* <!-- testimonials start --> */}
-      {/* <Testimonials /> */}
+       <Testimonials /> 
       {/* <!-- testimonials end --> */}
 
       {/* <!-- Call to Action start --> */}
-      {/* <CallToAction /> */}
+       <CallToAction /> 
       {/* <!-- Call to Action end --> */}
 
       {/* <!-- Contact Us start --> */}
-      {/* <Contact /> */}
+       <Contact /> 
       {/* <!-- Contact Us end --> */}
 
       {/* <!-- Footer Area Start --> */}
-      {/* <Footer /> */}
+       <Footer />
     </>
   );
 }
