@@ -6,7 +6,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { useAppSelector } from "@/redux/hooks";
-import CartSidebar from "./CartSidebar";
 import Sidebar from "./Sidebar";
 import LoginModal from "./LoginModal";
 
@@ -14,8 +13,6 @@ const Header = () => {
   const [sidebar, setSidebar] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [headerFixed, setHeaderFixed] = useState(false);
-  const [searchBox, setSearchBox] = useState(false);
-  const [cart, setCart] = useState(false);
 
   const cartItems = useAppSelector((state) => state.cart);
   const totolProducts = cartItems.products.reduce(
