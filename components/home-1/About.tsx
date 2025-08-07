@@ -51,7 +51,6 @@ const About = () => {
                       end={ABOUT_DATA.total_downloads.total}
                       className="odometer fs-three heading"
                     />
-
                     <span className="fs-three heading">{ABOUT_DATA.total_downloads.symbol}</span>
                     <span className="fs-three heading symbol">+</span>
                   </div>
