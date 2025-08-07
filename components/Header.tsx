@@ -39,7 +39,7 @@ const Header = () => {
     window.scrollTo(0, 0);
   };
   const path = usePathname();
-  const homepage = path === "/" || path === "/index-2" || path === "/index-3";
+  const homepage = path === "/" ;
   const ourServices =
     path === "/our-services-1" ||
     path === "/our-services-2" ||
@@ -421,7 +421,7 @@ const Header = () => {
       {/* <!-- header-section end --> */}
 
       {/* <!-- Login Registration start --> */}
-      <LoginModal />
+      {/* <LoginModal /> */}
       {/* <!-- Login Registration end --> */}
 
       {/* <!-- Sidebar Menu start --> */}

@@ -105,275 +105,6 @@ const Sidebar = ({ sidebar, setSidebar }: sideBarProps) => {
           </div> */}
         </div>
         <div className="sidebar-content d-center flex-columnn">
-          {/* <div className="header-section d-block">
-            <div className="navbar bg-transparent">
-              <ul className="navbar-nav d-xl-flex gap-2 gap-md-5 py-4 py-lg-0 px-4 px-lg-0 align-self-center">
-                <li className="dropdown show-dropdown">
-                  <button
-                    type="button"
-                    aria-label="Navbar Dropdown Button"
-                    className="dropdown-toggle dropdown-nav fs-three heading"
-                    onClick={() =>
-                      setDropdown((prev) => (prev == 1 ? null : 1))
-                    }>
-                    Home
-                  </button>
-                  <ul className={`dropdown-menu ${dropdown == 1 && "d-block"}`}>
-                    <li>
-                      <Link className="dropdown-item fs-three heading" href="/">
-                        Home One
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/index-2">
-                        Home Two
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/index-3">
-                        Home Three
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="dropdown show-dropdown">
-                  <button
-                    type="button"
-                    aria-label="Navbar Dropdown Button"
-                    className="dropdown-toggle dropdown-nav fs-three heading"
-                    onClick={() =>
-                      setDropdown((prev) => (prev == 2 ? null : 2))
-                    }>
-                    games
-                  </button>
-                  <ul className={`dropdown-menu ${dropdown == 2 && "d-block"}`}>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/game">
-                        games
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/game-details">
-                        games Details
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="dropdown show-dropdown">
-                  <button
-                    type="button"
-                    aria-label="Navbar Dropdown Button"
-                    className="dropdown-toggle dropdown-nav fs-three heading"
-                    onClick={() =>
-                      setDropdown((prev) => (prev == 3 ? null : 3))
-                    }>
-                    Services
-                  </button>
-                  <ul className={`dropdown-menu ${dropdown == 3 && "d-block"}`}>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/our-services-1">
-                        services one
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/our-services-2">
-                        services two
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/our-services-3">
-                        services three
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/our-services-details">
-                        services Details
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/our-services-details-2">
-                        services Details two
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-nav fs-three heading"
-                    href="/about-us">
-                    About
-                  </Link>
-                </li>
-                <li className="dropdown show-dropdown">
-                  <button
-                    type="button"
-                    aria-label="Navbar Dropdown Button"
-                    className="dropdown-toggle dropdown-nav fs-three heading"
-                    onClick={() =>
-                      setDropdown((prev) => (prev == 4 ? null : 4))
-                    }>
-                    Pages
-                  </button>
-                  <ul className={`dropdown-menu ${dropdown == 4 && "d-block"}`}>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/pricing-plan">
-                        pricing plan
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/store">
-                        Store
-                      </Link>
-                    </li>
-                    <li className="sub-dropdown">
-                      <button
-                        type="button"
-                        aria-label="Navbar Dropdown Button"
-                        className="dropdown-item fs-three heading dropdown-toggle"
-                        onClick={() =>
-                          setSubmenu((prev) => (prev == 1 ? null : 1))
-                        }>
-                        shop details
-                      </button>
-                      <ul
-                        className={`sub sub-menu dropend ${
-                          subMenu == 1 && "d-block"
-                        }`}>
-                        <li>
-                          <Link
-                            className="dropdown-item fs-three heading"
-                            href="/shop-details-1">
-                            shop details one
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="dropdown-item fs-three heading"
-                            href="/shop-details-2">
-                            shop details two
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/cart">
-                        Cart
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/checkout">
-                        checkout
-                      </Link>
-                    </li>
-                    <li className="sub-dropdown">
-                      <button
-                        type="button"
-                        aria-label="Navbar Dropdown Button"
-                        className="dropdown-item fs-three heading dropdown-toggle"
-                        onClick={() =>
-                          setSubmenu((prev) => (prev == 2 ? null : 2))
-                        }>
-                        career
-                      </button>
-                      <ul
-                        className={`sub sub-menu dropend ${
-                          subMenu == 2 && "d-block"
-                        }`}>
-                        <li>
-                          <Link
-                            className="dropdown-item fs-three heading"
-                            href="/career">
-                            career
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="dropdown-item fs-three heading"
-                            href="/career-details">
-                            career details
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/privacy-policy">
-                        privacy policy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/terms-conditions">
-                        terms conditions
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="dropdown show-dropdown">
-                  <button
-                    type="button"
-                    aria-label="Navbar Dropdown Button"
-                    className="dropdown-toggle dropdown-nav fs-three heading"
-                    onClick={() =>
-                      setDropdown((prev) => (prev == 5 ? null : 5))
-                    }>
-                    blog
-                  </button>
-                  <ul className={`dropdown-menu ${dropdown == 5 && "d-block"}`}>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/blog">
-                        blog
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        className="dropdown-item fs-three heading"
-                        href="/blog-single">
-                        blog Details
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item fs-three heading"
-                    href="/contact">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div> */}
 
           <Lottie
             animationData={animationData}
@@ -407,8 +138,8 @@ const Sidebar = ({ sidebar, setSidebar }: sideBarProps) => {
                       </i>
                     </div>
                     <div className="right-item w-75">
-                      <h5>London</h5>
-                      <span>Al. Brucknera Aleksandra 63, Wrocław 51-410</span>
+                      <h5>Dubai</h5>
+                      <span>518 , Silicon Oisis , Dubai</span>
                     </div>
                   </div>
                 </div>
@@ -424,8 +155,9 @@ const Sidebar = ({ sidebar, setSidebar }: sideBarProps) => {
                       </i>
                     </div>
                     <div className="right-item d-grid">
-                      <span>Example@gmail.com</span>
-                      <span>Example@gmail.com</span>
+                      <span>suppoer@dracoarts.com</span>
+                      <span>partners@dracoarts.com</span>
+                      <span>mirhamzahasan@gmail.com</span>
                     </div>
                   </div>
                 </div>
@@ -441,8 +173,8 @@ const Sidebar = ({ sidebar, setSidebar }: sideBarProps) => {
                       </i>
                     </div>
                     <div className="right-item d-grid">
-                      <span>(302) 555-0107</span>
-                      <span>(302) 555-0107</span>
+                      <span>(+971) 5693-1595-3</span>
+                      <span>(+92) 315-4644-536</span>
                     </div>
                   </div>
                 </div>

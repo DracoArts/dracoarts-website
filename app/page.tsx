@@ -20,8 +20,7 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  
-    title: "Draco Arts | No 1 Blockchain Game Development Studio",
+    title: "Draco Arts | No 1 Blockchain Game Development Studio | Where things are made",
     description: "test teasdasdst",
 };
 
@@ -31,12 +30,11 @@ export default function Home() {
       {/* <!-- Sidebar Menu end --> */}
        <Header /> 
       {/* <!-- Banner-section start --> */}
-      <Banner />
+       <Banner />
       {/* <!-- Banner-section end --> */}
 
       {/* <!-- About block section start --> */}
-     <About /> 
-
+      <About /> 
       {/* <!-- About block section end --> */}
 
       {/* <!-- Our Games section start --> */}

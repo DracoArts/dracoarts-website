@@ -11,9 +11,7 @@ import ellipse3Image from "@/public/images/abs-items/ellipse-3.png";
 import ellipse1Image from "@/public/images/abs-items/ellipse-1.png";
 import ellipse2Image from "@/public/images/abs-items/ellipse-2.png";
 import topBottomIcon from "@/public/images/icon/top-bottom.png";
-import bannerSliderImage1 from "@/public/images/banner-slider-img-1.png";
-import appStoreImage from "@/public/images/appstore.png";
-import googlePlayImage from "@/public/images/googleplay.png";
+
 import Slider from "react-slick";
 import { TypeAnimation } from "react-type-animation";
 import PrimaryBtn from "../PrimaryBtn";
@@ -104,30 +102,7 @@ const Banner = () => {
               </div>
               <div className="col-xl-4 col-lg-5 col-md-7 col-sm-9 mt-10 mt-lg-0 col-10 text-center">
                 <Slider {...settings} className="game-carousel pb-20">
-                  {/* <div className="slide-area">
-                    <div className="top-area d-flex justify-content-end gap-4 mb-5 align-items-end">
-                      <Image src={topBottomIcon} alt="Image" />
-                      <h4 className="mb-1">Featured Games</h4>
-                    </div>
-                    <div className="single-slider p-3 p-sm-5">
-                      <div className="thumb-wrapper">
-                        <div className="thumb">
-                          <Image src={bannerSliderImage1} alt="Image" />
-                        </div>
-                        <div className="app-download-title pt-5 pb-3 text-center">
-                          <h3>Crazy Wild</h3>
-                        </div>
-                        <div className="app-download d-flex gap-5 align-items-center">
-                          <Link href="https://www.apple.com/app-store/">
-                            <Image src={appStoreImage} alt="Image" />
-                          </Link>
-                          <Link href="https://play.google.com/">
-                            <Image src={googlePlayImage} alt="Image" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
+               
                   <div className="slide-area">
                     <div className="top-area d-flex justify-content-end gap-4 mb-5 align-items-end">
                       <Image src={topBottomIcon} alt="Image" />
@@ -144,7 +119,7 @@ const Banner = () => {
 
                      
                             <Link
-                                href="/game"
+                                href="/games"
                                 onMouseMove={handleMouseMove}
                                 style={style}
                                 className="box-style btn-box text-dark">

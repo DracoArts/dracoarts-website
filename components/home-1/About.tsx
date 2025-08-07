@@ -4,7 +4,7 @@ import aboutBlockBg from "@/public/images/about-block-bg.png";
 import Image from "next/image";
 import CounterElement from "../Counter";
 import PrimaryBtn from "../PrimaryBtn";
-
+import { ABOUT_DATA } from "@/public/data/about";
 const About = () => {
   return (
     <section className="about-block pt-120 pb-120">
@@ -16,7 +16,7 @@ const About = () => {
               <div className="experience p-2 p-lg-4 position-absolute ">
                 <div className="experience-wrap p-3 px-lg-5 py-lg-8 d-inline-flex d-center gap-3">
                   <div className="counters d-center">
-                    <CounterElement end={20} className="display-four" />
+                    <CounterElement end={ABOUT_DATA.experience} className="display-four" />
                     <span className="display-four visible-slowly-bottom symbol">
                       +
                     </span>
@@ -38,7 +38,7 @@ const About = () => {
                 Bringing people together through <span>the power of play</span>
               </span>
               <p>
-                As Game Gamestorm, we continue to open doors to new worlds every
+                As Draco Arts Game & Art Studio, we continue to open doors to new worlds every
                 day and we are working excitedly for creating new games and
                 unique ideas!
               </p>
@@ -48,15 +48,15 @@ const About = () => {
                 <div className="counter-item mb-8 pb-4">
                   <div className="counters mb-3 d-flex align-items-center">
                     <CounterElement
-                      end={500}
+                      end={ABOUT_DATA.total_downloads.total}
                       className="odometer fs-three heading"
                     />
 
-                    <span className="fs-three heading">M</span>
+                    <span className="fs-three heading">{ABOUT_DATA.total_downloads.symbol}</span>
                     <span className="fs-three heading symbol">+</span>
                   </div>
                   <span className="name-area fs-seven">
-                    Downloads, or 6% of the world’s population.
+                      {ABOUT_DATA.total_downloads.description}
                   </span>
                 </div>
               </div>
@@ -64,15 +64,15 @@ const About = () => {
                 <div className="counter-item mb-8 pb-4">
                   <div className="counters mb-3 d-flex align-items-center">
                     <CounterElement
-                      end={2}
+                      end={ABOUT_DATA.daily_users.total}
                       className="odometer fs-three heading"
                     />
 
-                    <span className="fs-three heading">M</span>
+                    <span className="fs-three heading">{ABOUT_DATA.daily_users.symbol}</span>
                     <span className="fs-three heading symbol">+</span>
                   </div>
                   <span className="name-area fs-seven">
-                    Our games have over 20 million unique daily users.
+                    {ABOUT_DATA.daily_users.description}
                   </span>
                 </div>
               </div>
@@ -80,14 +80,14 @@ const About = () => {
                 <div className="counter-item mb-8 pb-4">
                   <div className="counters mb-3 d-flex align-items-center">
                     <CounterElement
-                      end={52}
+                      end={ABOUT_DATA.experts.total}
                       className="odometer fs-three heading"
                     />
 
                     <span className="fs-three heading symbol">+</span>
                   </div>
                   <span className="name-area fs-seven">
-                    Experts collaborating to blow your mind in one place.
+                    {ABOUT_DATA.experts.description}
                   </span>
                 </div>
               </div>
@@ -95,14 +95,14 @@ const About = () => {
                 <div className="counter-item mb-8 pb-4">
                   <div className="counters mb-3 d-flex align-items-center">
                     <CounterElement
-                      end={4}
+                      end={ABOUT_DATA.games.total}
                       className="odometer fs-three heading"
                     />
-                    <span className="fs-three heading">k</span>
+                    
                     <span className="fs-three heading symbol">+</span>
                   </div>
                   <span className="name-area fs-seven">
-                    The Gamestorm Studio is launching with 4K+ Games.
+                    {ABOUT_DATA.games.description}
                   </span>
                 </div>
               </div>
