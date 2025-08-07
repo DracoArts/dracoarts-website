@@ -11,9 +11,9 @@ export const gameTabHome2 = [
       {
         id: 1,
         img: gameImg1,
-        title: "Crazy Wild",
+        title: "Bounce Tales Adventures",
         rating: 4.5,
-        downloads: 500,
+        downloads: 2,
       },
       {
         id: 2,

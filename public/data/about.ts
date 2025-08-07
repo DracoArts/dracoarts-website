@@ -21,6 +21,11 @@ export const ABOUT_DATA = {
     symbol: "+",
     description: "Draco Arts is launching with 180+ games."
   },
+  clinets : {
+    total : 40,
+    symbol : "+",
+    description : "We have 40+ clients from all over the world."
+  }
   
 
 };

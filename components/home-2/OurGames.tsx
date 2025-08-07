@@ -12,7 +12,7 @@ import ModalVideo from "react-modal-video";
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
-
+import { GamesData } from "@/public/data/games";
 const OurGames = () => {
   const [isOpen, setOpen] = useState(false);
   const [active, setActive] = useState(1);
@@ -54,7 +54,7 @@ const OurGames = () => {
             </div>
           </div>
         </div>
-        <div className="row justify-content-center">
+        {/* <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-7 text-center">
             <ul className="nav tablinks flex-wrap d-center mb-6 mb-sm-10 d-inline-flex gap-4 p-3 tab-area">
               {gameTabHome2.map((item) => (
@@ -72,24 +72,26 @@ const OurGames = () => {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
         <div className="row justify-content-center">
           <div className="col-lg-12">
             <div className="tabcontents visible-from-bottom">
-              {gameTabHome2.map((item) => (
+              {GamesData.map((item) => (
                 <div
                   key={item.id}
                   className={`tabitem ${active == item.id && "active"}`}>
                   <div className="row cus-mar">
-                    {item.items.map((card) => (
-                      <div key={card.id} className="col-md-6">
+                   
+                      <div key={item.id} className="col-md-6">
                         <div className="single-box">
                           <div className="position-relative d-center">
                             <span className="feature-tag start d-center position-absolute">
-                              Feature
+                              {item.tag}
                             </span>
                             <Image
-                              src={card.img}
+                              src={item.banner}
+                              width={360}
+                              height={360}
                               className="w-100 thumb-img"
                               alt="sec-img"
                             />
@@ -104,19 +106,17 @@ const OurGames = () => {
                           <div className="info-area position-relative p-3 p-lg-5">
                             <div className="d-flex align-items-end gap-4 gap-sm-8">
                               <div className="img-area">
-                                <Image src={reviewImg1} alt="image" />
+                                <Image src={item.icon} width={120} height={120} alt="image" />
                               </div>
                               <div className="info-area">
                                 <Link href="game-details">
                                   <h3 className="visible-slowly-bottom mb-4">
-                                    Crazy Wild
+                                    {item.title}
                                   </h3>
                                 </Link>
                                 <ul className="d-flex flex-wrap fs-seven align-items-center gap-5 gap-md-10">
                                   <li>Horror Adventure</li>
-                                  <li>Mobile</li>
-                                  <li>Action RPG</li>
-                                  <li>PC</li>
+                                 
                                 </ul>
                               </div>
                             </div>
@@ -126,18 +126,20 @@ const OurGames = () => {
                                   <i className="material-symbols-outlined mat-icon">
                                     star
                                   </i>
-                                  <h4 className="fs-four">4.5</h4>
+                                  <h4 className="fs-four">{item.rating}</h4>
                                 </div>
-                                <p className="fs-seven">5.2M Reviews</p>
+                                <p className="fs-seven">{item.reviews} Reviews</p>
                               </div>
                               <div className="single-area d-grid d-sm-flex gap-2 align-items-center">
-                                <h4 className="fs-four mb-1">500M+</h4>
+                                <h4 className="fs-four mb-1">{item.downloads}</h4>
                                 <p className="fs-seven">Downloads</p>
                               </div>
                             </div>
                             <div className="app-download d-flex gap-4 align-items-center">
+
+                              { item.ios &&
                               <Link
-                                href="https://www.apple.com/app-store/"
+                                href={item.ios}
                                 className="w-100">
                                 <Image
                                   src={appStore}
@@ -145,8 +147,10 @@ const OurGames = () => {
                                   alt="Image"
                                 />
                               </Link>
+                            }
+                              { item.google &&
                               <Link
-                                href="https://play.google.com/"
+                                href={item.google}
                                 className="w-100">
                                 <Image
                                   src={googlePlay}
@@ -154,29 +158,22 @@ const OurGames = () => {
                                   alt="Image"
                                 />
                               </Link>
-                              <Link
-                                href="https://www.amazon.com/"
-                                className="w-100">
-                                <Image
-                                  src={amazon}
-                                  className="w-100"
-                                  alt="Image"
-                                />
-                              </Link>
+              }
+                              
                             </div>
                           </div>
                         </div>
                       </div>
-                    ))}
+                
                   </div>
-                  <div className="text-center mt-10 mt-sm-15">
+                  {/* <div className="text-center mt-10 mt-sm-15">
                     <div className="loading py-3 px-8 d-inline-flex align-items-center gap-2">
                       <div className="icon-box d-center">
                         <i className="material-symbols-outlined"> pending </i>
                       </div>
                       <span>Loading</span>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </div>
