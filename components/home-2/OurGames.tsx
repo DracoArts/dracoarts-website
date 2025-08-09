@@ -16,6 +16,7 @@ import { GamesData } from "@/public/data/games";
 const OurGames = () => {
   const [isOpen, setOpen] = useState(false);
   const [active, setActive] = useState(1);
+  const [videoId, setVideoId] = useState("KQBNY3ZPAj4");
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   const handleMouseMove = (e: any) => {
@@ -76,117 +77,109 @@ const OurGames = () => {
         <div className="row justify-content-center">
           <div className="col-lg-12">
             <div className="tabcontents visible-from-bottom">
-              {GamesData.map((item) => (
-                <div
+                <div className="row cus-mar">
+                {GamesData.map((item, idx) => (
+                  <div
                   key={item.id}
-                  className={`tabitem ${active == item.id && "active"}`}>
-                  <div className="row cus-mar">
-                   
-                      <div key={item.id} className="col-md-6">
-                        <div className="single-box">
-                          <div className="position-relative d-center">
-                            <span className="feature-tag start d-center position-absolute">
-                              {item.tag}
-                            </span>
-                            <Image
-                              src={item.banner}
-                              width={360}
-                              height={360}
-                              className="w-100 thumb-img"
-                              alt="sec-img"
-                            />
-                            <span
-                              onClick={() => setOpen(true)}
-                              onMouseMove={handleMouseMove}
-                              style={style}
-                              className="box-style pointer btn-box-second heading-five fs-five mfp-iframe popupvideo text-uppercase d-center position-absolute">
-                              Play
-                            </span>
-                          </div>
-                          <div className="info-area position-relative p-3 p-lg-5">
-                            <div className="d-flex align-items-end gap-4 gap-sm-8">
-                              <div className="img-area">
-                                <Image src={item.icon} width={120} height={120} alt="image" />
-                              </div>
-                              <div className="info-area">
-                                <Link href="game-details">
-                                  <h3 className="visible-slowly-bottom mb-4">
-                                    {item.title}
-                                  </h3>
-                                </Link>
-                                <ul className="d-flex flex-wrap fs-seven align-items-center gap-5 gap-md-10">
-                                  <li>Horror Adventure</li>
-                                 
-                                </ul>
-                              </div>
-                            </div>
-                            <div className="review-box mt-5 mt-md-8 mb-6 mb-md-10 w-100 p-2 p-sm-4 d-center gap-3 justify-content-between">
-                              <div className="single-area d-flex align-items-center gap-2">
-                                <div className="d-flex gap-2 align-items-center mb-1">
-                                  <i className="material-symbols-outlined mat-icon">
-                                    star
-                                  </i>
-                                  <h4 className="fs-four">{item.rating}</h4>
-                                </div>
-                                <p className="fs-seven">{item.reviews} Reviews</p>
-                              </div>
-                              <div className="single-area d-grid d-sm-flex gap-2 align-items-center">
-                                <h4 className="fs-four mb-1">{item.downloads}</h4>
-                                <p className="fs-seven">Downloads</p>
-                              </div>
-                            </div>
-                            <div className="app-download d-flex gap-4 align-items-center">
+                  className={`col tabitem ${active == item.id ? "active" : ""}`}>
+                  <div className="single-box">
+                    <div className="position-relative d-center">
+                    <span className="feature-tag start d-center position-absolute">
+                      {item.tag}
+                    </span>
+                    <Image
+                      src={item.banner}
+                      width={360}
+                      height={360}
+                      className="w-100 thumb-img"
+                      alt="sec-img"
+                    />
+                    <span
+                      onClick={() => {
 
-                              { item.ios &&
-                              <Link
-                                href={item.ios}
-                                className="w-100">
-                                <Image
-                                  src={appStore}
-                                  className="w-100"
-                                  alt="Image"
-                                />
-                              </Link>
-                            }
-                              { item.google &&
-                              <Link
-                                href={item.google}
-                                className="w-100">
-                                <Image
-                                  src={googlePlay}
-                                  className="w-100"
-                                  alt="Image"
-                                />
-                              </Link>
-              }
-                              
-                            </div>
-                          </div>
-                        </div>
+                        setVideoId(item.video);
+                         setOpen(true)
+                      }}
+                      onMouseMove={handleMouseMove}
+                      style={style}
+                      className="box-style pointer btn-box-second heading-five fs-five mfp-iframe popupvideo text-uppercase d-center position-absolute">
+                      Play
+                    </span>
+                    </div>
+                    <div className="info-area position-relative p-3 p-lg-5">
+                    <div className="d-flex align-items-end gap-4 gap-sm-8">
+                      <div className="img-area">
+                      <Image src={item.icon} width={120} height={120} alt="image" />
                       </div>
+                      <div className="info-area">
+                      <Link href="game-details">
+                        <h3 className="visible-slowly-bottom mb-4">
+                        {item.title}
+                        </h3>
+                      </Link>
+                      <ul className="d-flex flex-wrap fs-seven align-items-center gap-5 gap-md-10">
+                        <li>Horror Adventure</li>
+                      </ul>
+                      </div>
+                    </div>
+                    <div className="review-box mt-5 mt-md-8 mb-6 mb-md-10 w-100 p-2 p-sm-4 d-center gap-3 justify-content-between">
+                      <div className="single-area d-flex align-items-center gap-2">
+                      <div className="d-flex gap-2 align-items-center mb-1">
+                        <i className="material-symbols-outlined mat-icon">
+                        star
+                        </i>
+                        <h4 className="fs-four">{item.rating}</h4>
+                      </div>
+                      <p className="fs-seven">{item.reviews} Reviews</p>
+                      </div>
+                      <div className="single-area d-grid d-sm-flex gap-2 align-items-center">
+                      <h4 className="fs-four mb-1">{item.downloads}</h4>
+                      <p className="fs-seven">Downloads</p>
+                      </div>
+                    </div>
+                    <div className="app-download d-flex gap-4 align-items-center">
+                      {item.ios &&
+                      <Link
+                        href={item.ios}
+                        className="w-100">
+                        <Image
+                        src={appStore}
+                        className="w-100"
+                        alt="Image"
+                        />
+                      </Link>
+                      }
+                      {item.google &&
+                      <Link
+                        href={item.google}
+                        className="w-100">
+                        <Image
+                        src={googlePlay}
+                        className="w-100"
+                        alt="Image"
+                        />
+                      </Link>
+                      }
+                    </div>
+                    </div>
+                  </div>
                 
                   </div>
-                  {/* <div className="text-center mt-10 mt-sm-15">
-                    <div className="loading py-3 px-8 d-inline-flex align-items-center gap-2">
-                      <div className="icon-box d-center">
-                        <i className="material-symbols-outlined"> pending </i>
-                      </div>
-                      <span>Loading</span>
-                    </div>
-                  </div> */}
+                ))}
                 </div>
-              ))}
+
+                  <ModalVideo
+                    channel="youtube"
+                    youtube={{ mute: 0, autoplay: 0 }}
+                    isOpen={isOpen}
+                    videoId={videoId}
+                    onClose={() => setOpen(false)}
+                  />
             </div>
           </div>
         </div>
       </div>
-      <ModalVideo
-        channel="youtube"
-        youtube={{ mute: 0, autoplay: 0 }}
-        isOpen={isOpen}
-        videoId="IaT4DneyKLc"
-        onClose={() => setOpen(false)}
-      />
+      
     </section>
   );
 };
