@@ -99,25 +99,25 @@ export const TEAM_DATA = [
         linkedin : "https://www.linkedin.com/in/maria-butt-a75700127/",
         twitter : "https://twitter.com/mirhamzahasan" 
     },
-    {
-        id : 10,
-        name : "Iqra Ijaz",
-        position : "Marketing",
-        image : "https://i.postimg.cc/BvYRd7vb/usman.jpg",
-        portfolio : "https://www.mirhamzahasan.com",
-        github : "https://github.com/mirhamzahasan",
-        linkedin : "https://www.linkedin.com/in/usman-moin-b76123118/",
-        twitter : "https://twitter.com/mirhamzahasan" 
-    },
-     {
-        id : 11,
-        name : "Fatima Shahid",
-        position : "Marketing",
-        image : "https://i.postimg.cc/BvYRd7vb/usman.jpg",
-        portfolio : "https://www.mirhamzahasan.com",
-        github : "https://github.com/mirhamzahasan",
-        linkedin : "https://www.linkedin.com/in/usman-moin-b76123118/",
-        twitter : "https://twitter.com/mirhamzahasan" 
-    },
+    // {
+    //     id : 10,
+    //     name : "Iqra Ijaz",
+    //     position : "Marketing",
+    //     image : "https://i.postimg.cc/BvYRd7vb/usman.jpg",
+    //     portfolio : "https://www.mirhamzahasan.com",
+    //     github : "https://github.com/mirhamzahasan",
+    //     linkedin : "https://www.linkedin.com/in/usman-moin-b76123118/",
+    //     twitter : "https://twitter.com/mirhamzahasan" 
+    // },
+    //  {
+    //     id : 11,
+    //     name : "Fatima Shahid",
+    //     position : "Marketing",
+    //     image : "https://i.postimg.cc/BvYRd7vb/usman.jpg",
+    //     portfolio : "https://www.mirhamzahasan.com",
+    //     github : "https://github.com/mirhamzahasan",
+    //     linkedin : "https://www.linkedin.com/in/usman-moin-b76123118/",
+    //     twitter : "https://twitter.com/mirhamzahasan" 
+    // },
     
 ]
